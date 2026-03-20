@@ -785,8 +785,80 @@
   .fade-in.visible { opacity: 1; transform: translateY(0); }
 
   /* ── MOBILE ── */
+  /* ── HAMBURGER ── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px; height: 40px;
+    background: transparent;
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+    padding: 0;
+    z-index: 200;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px; height: 1.5px;
+    background: var(--cream);
+    transition: all 0.25s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+  .mobile-nav-overlay {
+    display: none;
+    position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
+    background: rgba(10,20,40,0.98);
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+  .mobile-nav-overlay.open { display: flex; }
+  .mobile-nav-links {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    padding: 0 5vw;
+  }
+  .mobile-nav-links li { border-bottom: 1px solid var(--border-light); }
+  .mobile-nav-links a {
+    display: block;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cream-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .mobile-nav-links a:hover { color: var(--gold); }
+  .mobile-nav-cta {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy);
+    background: var(--gold);
+    padding: 14px 36px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .mobile-nav-cta:hover { background: var(--gold-light); }
+
   @media (max-width: 900px) {
     nav .nav-links { display: none; }
+    nav .nav-cta { display: none; }
+    .nav-hamburger { display: flex; }
     .proof-grid { grid-template-columns: 1fr; }
     .proof-card { border-right: none; border-bottom: 1px solid var(--border); }
     .proof-card:last-child { border-bottom: none; }
@@ -797,6 +869,28 @@
     .why-layout { grid-template-columns: 1fr; gap: 40px; }
     .why-photo { aspect-ratio: 1/1; }
     .offer-inner { padding: 36px 24px; }
+    /* Typography */
+    .hero-headline { font-size: clamp(32px, 7vw, 56px); line-height: 1.15; }
+    .hero-sub { font-size: 15px; }
+    .section-heading { font-size: clamp(28px, 6vw, 48px); }
+    /* Spacing */
+    #hero { padding: 100px 5vw 60px; }
+    #proof, #services, #icp, #why, #perspectives, #contact { padding: 80px 5vw; }
+    .icp-card { padding: 32px 24px; }
+    .why-right h2 { font-size: clamp(26px, 5vw, 40px); }
+  }
+
+  @media (max-width: 480px) {
+    .hero-headline { font-size: clamp(26px, 8.5vw, 36px); }
+    .hero-eyebrow { font-size: 10px; }
+    .hero-actions { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .hero-actions .btn-primary, .hero-actions .btn-ghost { width: 100%; text-align: center; }
+    .section-heading { font-size: clamp(24px, 7vw, 32px); }
+    #proof, #services, #icp, #why, #perspectives, #contact { padding: 60px 5vw; }
+    .offer-inner { padding: 28px 20px; }
+    .icp-card { padding: 28px 20px; }
+    .perspectives-grid { grid-template-columns: 1fr; }
+    .article-card { padding: 28px; }
   }
 
   /* ── PERSPECTIVES ── */
@@ -985,7 +1079,20 @@
     <li><a href="#perspectives">Perspectives</a></li>
   </ul>
   <a href="mailto:hello@digit-ai.ai" class="nav-cta">Start a Conversation</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-nav-overlay" id="mobile-nav-overlay">
+  <ul class="mobile-nav-links">
+    <li><a href="#proof" onclick="closeMobileNav()">Track Record</a></li>
+    <li><a href="#services" onclick="closeMobileNav()">How We Work</a></li>
+    <li><a href="#icp" onclick="closeMobileNav()">Who We Serve</a></li>
+    <li><a href="#why" onclick="closeMobileNav()">Why Digit-AI</a></li>
+    <li><a href="#perspectives" onclick="closeMobileNav()">Perspectives</a></li>
+  </ul>
+  <a href="mailto:hello@digit-ai.ai" class="mobile-nav-cta">Start a Conversation</a>
+</div>
 
 <!-- ── HERO ── -->
 <section id="hero">
@@ -1401,6 +1508,26 @@ window.addEventListener('scroll', () => {
     console.warn('Articles failed to load:', e);
   }
 })();
+</script>
+<script>
+  const hamburger = document.getElementById('nav-hamburger');
+  const mobileNav = document.getElementById('mobile-nav-overlay');
+  hamburger.addEventListener('click', function() {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    document.body.style.overflow = '';
+  }
+  // Close on resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 900) closeMobileNav();
+  });
 </script>
 </body>
 </html>
