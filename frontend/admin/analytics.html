@@ -85,7 +85,7 @@ async function checkAuth() {
   const errEl = document.getElementById('auth-err');
   errEl.style.display = 'none';
   try {
-    const res = await fetch('/api/auth', {
+    const res = await fetch('https://backend-psi-vert.vercel.app/api/auth', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw })
@@ -113,7 +113,7 @@ function showAnalytics(plausibleUrl) {
 // Auto-login if token stored
 const token = localStorage.getItem('digit_ai_token');
 if (token) {
-  fetch('/api/auth/verify', { headers: { 'Authorization': 'Bearer ' + token } })
+  fetch('https://backend-psi-vert.vercel.app/api/auth/verify', { headers: { 'Authorization': 'Bearer ' + token } })
     .then(r => r.ok ? r.json() : null)
     .then(d => { if (d) showAnalytics(d.plausibleUrl); })
     .catch(() => {});
