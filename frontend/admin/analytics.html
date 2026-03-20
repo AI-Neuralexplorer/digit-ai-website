@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics — DIGIT-AI Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0A1428; --navy-mid: #1B2A4A; --gold: #B8926A;
+    --cream: #F5F0E8; --cream-dim: rgba(245,240,232,0.7); --cream-muted: rgba(245,240,232,0.4);
+    --border: rgba(184,146,106,0.2); --border-light: rgba(245,240,232,0.08);
+  }
+  body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--cream); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  header {
+    background: rgba(10,20,40,0.98); border-bottom: 1px solid var(--border);
+    padding: 0 32px; height: 64px; display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 50;
+  }
+  .header-logo { font-size: 15px; font-weight: 500; letter-spacing: 0.18em; color: var(--cream); display: flex; align-items: center; gap: 8px; }
+  .header-logo span { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); display: inline-block; }
+  .header-right { display: flex; gap: 16px; align-items: center; }
+  .header-right a { font-size: 12px; color: var(--cream-muted); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s; }
+  .header-right a:hover { color: var(--gold); }
+  main { max-width: 1200px; margin: 0 auto; padding: 40px 32px; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 32px; margin-bottom: 8px; }
+  .sub { font-size: 14px; color: var(--cream-muted); margin-bottom: 40px; }
+  #auth-wall { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 20px; }
+  #auth-wall p { color: var(--cream-muted); font-size: 15px; }
+  .field input { background: var(--navy-mid); border: 1px solid var(--border); color: var(--cream); padding: 11px 16px; font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; width: 280px; transition: border-color 0.2s; }
+  .field input:focus { border-color: var(--gold); }
+  .btn { background: var(--gold); color: var(--navy); border: none; padding: 11px 24px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; }
+  .plausible-wrapper { border: 1px solid var(--border-light); background: var(--navy-mid); overflow: hidden; }
+  .plausible-wrapper iframe { width: 100%; height: 800px; border: none; display: block; }
+  .setup-note { padding: 40px; text-align: center; }
+  .setup-note h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; margin-bottom: 12px; }
+  .setup-note p { font-size: 14px; color: var(--cream-muted); line-height: 1.7; max-width: 500px; margin: 0 auto 20px; }
+  .setup-note code { background: rgba(255,255,255,0.05); padding: 2px 6px; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-logo"><span></span>DIGIT-AI Admin</div>
+  <div class="header-right">
+    <a href="/admin/">← Articles</a>
+    <a href="/" target="_blank">View Site</a>
+  </div>
+</header>
+
+<main>
+  <div id="auth-wall">
+    <p>Enter admin password to view analytics</p>
+    <div class="field"><input type="password" id="pw" placeholder="Admin password" autocomplete="current-password"></div>
+    <button class="btn" onclick="checkAuth()">View Analytics</button>
+    <p id="auth-err" style="color:#e05252;display:none">Incorrect password</p>
+  </div>
+
+  <div id="analytics-content" style="display:none">
+    <h1>Analytics</h1>
+    <p class="sub">Live visitor data from Plausible Analytics — digit-ai.ai</p>
+
+    <div class="plausible-wrapper" id="plausible-frame-wrapper">
+      <!-- Plausible shared dashboard will be embedded here once configured -->
+      <div class="setup-note">
+        <h3>Set up Plausible Analytics</h3>
+        <p>To enable this dashboard:</p>
+        <p>
+          1. Sign up at <strong>plausible.io</strong><br>
+          2. Add <strong>digit-ai.ai</strong> as a site<br>
+          3. Go to Site Settings → Visibility → make the dashboard public or shared<br>
+          4. Copy the shared dashboard URL and add it to Vercel environment variables as <code>PLAUSIBLE_DASHBOARD_URL</code><br>
+          5. The iframe will automatically load once the variable is set
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+async function checkAuth() {
+  const pw = document.getElementById('pw').value;
+  const errEl = document.getElementById('auth-err');
+  errEl.style.display = 'none';
+  try {
+    const res = await fetch('/api/auth', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: pw })
+    });
+    if (!res.ok) { errEl.style.display = 'block'; return; }
+    const data = await res.json();
+    localStorage.setItem('digit_ai_token', data.token);
+    showAnalytics(data.plausibleUrl);
+  } catch(e) {
+    errEl.textContent = 'Connection error';
+    errEl.style.display = 'block';
+  }
+}
+document.getElementById('pw').addEventListener('keydown', e => { if (e.key === 'Enter') checkAuth(); });
+
+function showAnalytics(plausibleUrl) {
+  document.getElementById('auth-wall').style.display = 'none';
+  document.getElementById('analytics-content').style.display = 'block';
+  if (plausibleUrl) {
+    document.getElementById('plausible-frame-wrapper').innerHTML =
+      `<iframe src="${plausibleUrl}" scrolling="no" frameborder="0"></iframe>`;
+  }
+}
+
+// Auto-login if token stored
+const token = localStorage.getItem('digit_ai_token');
+if (token) {
+  fetch('/api/auth/verify', { headers: { 'Authorization': 'Bearer ' + token } })
+    .then(r => r.ok ? r.json() : null)
+    .then(d => { if (d) showAnalytics(d.plausibleUrl); })
+    .catch(() => {});
+}
+</script>
+</body>
+</html>

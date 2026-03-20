@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/auth/verify", "dest": "backend/api/auth.js" },
+    { "src": "/api/auth",        "dest": "backend/api/auth.js" },
+    { "src": "/api/articles/(.*)", "dest": "backend/api/articles.js" },
+    { "src": "/api/articles",    "dest": "backend/api/articles.js" },
+    { "src": "/api/contact",     "dest": "backend/api/contact.js" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options",        "value": "DENY" },
+        { "key": "Referrer-Policy",        "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

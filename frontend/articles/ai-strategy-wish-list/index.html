@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Article — DIGIT-AI</title>
+<meta name="description" id="page-description" content="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<script defer data-domain="digit-ai.ai" src="https://plausible.io/js/script.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0A1428;
+    --navy-mid: #1B2A4A;
+    --navy-light: #243554;
+    --gold: #B8926A;
+    --gold-light: #D4AE8A;
+    --gold-pale: rgba(184,146,106,0.12);
+    --cyan: #06B6D4;
+    --cream: #F5F0E8;
+    --cream-dim: rgba(245,240,232,0.7);
+    --cream-muted: rgba(245,240,232,0.4);
+    --white: #ffffff;
+    --border: rgba(184,146,106,0.2);
+    --border-light: rgba(245,240,232,0.08);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: var(--cream);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 0 5vw; height: 72px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(10,20,40,0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+  }
+  .nav-logo {
+    font-family: 'DM Sans', sans-serif; font-size: 17px; font-weight: 500;
+    letter-spacing: 0.18em; color: var(--cream); text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo span {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold); margin-bottom: 1px;
+  }
+  .back-link {
+    font-size: 13px; color: var(--cream-muted); text-decoration: none;
+    letter-spacing: 0.06em; transition: color 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .back-link:hover { color: var(--gold); }
+
+  /* ARTICLE */
+  .article-wrapper {
+    max-width: 760px; margin: 0 auto;
+    padding: 120px 40px 80px;
+  }
+  .article-label {
+    font-size: 11px; font-weight: 400; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--gold);
+    display: flex; align-items: center; gap: 12px; margin-bottom: 28px;
+  }
+  .article-label::before {
+    content: ''; display: block; width: 32px; height: 1px; background: var(--gold);
+  }
+  .article-meta {
+    display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+    margin-bottom: 16px;
+  }
+  .article-category {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--gold);
+    border: 1px solid var(--border); padding: 4px 10px;
+  }
+  .article-date, .article-read-time {
+    font-size: 13px; color: var(--cream-muted); font-weight: 300;
+  }
+  h1.article-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300; font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.15; color: var(--cream);
+    margin-bottom: 24px; letter-spacing: -0.01em;
+  }
+  .article-excerpt {
+    font-size: 18px; font-weight: 300; color: var(--cream-dim);
+    line-height: 1.7; margin-bottom: 40px;
+    border-left: 2px solid var(--gold); padding-left: 20px;
+  }
+  .article-divider {
+    height: 1px; background: var(--border); margin-bottom: 48px;
+  }
+  .article-body { font-size: 17px; font-weight: 300; line-height: 1.8; color: var(--cream-dim); }
+  .article-body h2 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 400;
+    font-size: 26px; color: var(--cream); margin: 48px 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .article-body h3 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 400;
+    font-size: 21px; color: var(--gold-light); margin: 36px 0 12px;
+  }
+  .article-body p { margin-bottom: 24px; }
+  .article-body strong { font-weight: 500; color: var(--cream); }
+  .article-body em { font-style: italic; color: var(--cream-dim); }
+  .article-body ul, .article-body ol {
+    margin: 0 0 24px 24px; color: var(--cream-dim);
+  }
+  .article-body li { margin-bottom: 8px; }
+  .article-body blockquote {
+    border-left: 2px solid var(--gold); padding: 4px 0 4px 20px;
+    margin: 32px 0; font-style: italic; color: var(--cream-dim);
+  }
+
+  /* AUTHOR */
+  .author-block {
+    margin-top: 64px; padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+  .author-label {
+    font-size: 11px; font-weight: 400; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+  }
+  .author-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 22px;
+    font-weight: 400; color: var(--cream); margin-bottom: 8px;
+  }
+  .author-bio { font-size: 15px; color: var(--cream-muted); font-weight: 300; line-height: 1.7; }
+
+  /* CTA */
+  .article-cta {
+    margin-top: 64px; padding: 40px;
+    border: 1px solid var(--border);
+    background: var(--gold-pale);
+    text-align: center;
+  }
+  .article-cta h3 {
+    font-family: 'Cormorant Garamond', serif; font-weight: 300;
+    font-size: 26px; color: var(--cream); margin-bottom: 12px;
+  }
+  .article-cta p { font-size: 15px; color: var(--cream-muted); margin-bottom: 24px; }
+  .article-cta a {
+    display: inline-block; padding: 14px 32px;
+    border: 1px solid var(--gold); color: var(--gold);
+    text-decoration: none; font-size: 13px; letter-spacing: 0.12em;
+    text-transform: uppercase; transition: background 0.2s, color 0.2s;
+  }
+  .article-cta a:hover { background: var(--gold); color: var(--navy); }
+
+  /* FOOTER */
+  footer {
+    padding: 48px 5vw; text-align: center;
+    border-top: 1px solid var(--border-light);
+    margin-top: 80px;
+  }
+  .footer-logo {
+    font-size: 15px; font-weight: 500; letter-spacing: 0.18em;
+    color: var(--cream); display: flex; align-items: center; gap: 10px;
+    justify-content: center; margin-bottom: 12px;
+  }
+  .footer-logo span { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); display: inline-block; }
+  .footer-tagline { font-size: 13px; color: var(--cream-muted); font-weight: 300; }
+
+  /* Loading / error states */
+  #loading { text-align: center; padding: 80px; color: var(--cream-muted); font-size: 15px; }
+  #error { text-align: center; padding: 80px; color: var(--cream-muted); font-size: 15px; }
+
+  @media (max-width: 640px) {
+    .article-wrapper { padding: 100px 24px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo"><span></span>DIGIT-AI</a>
+  <a href="/#perspectives" class="back-link">&#8592; Perspectives</a>
+</nav>
+
+<div id="loading">Loading article…</div>
+<div id="error" style="display:none">Article not found. <a href="/" style="color:var(--gold)">Return home</a></div>
+
+<article id="article-content" style="display:none">
+  <div class="article-wrapper">
+    <p class="article-label">Perspectives</p>
+    <div class="article-meta">
+      <span class="article-category" id="art-category"></span>
+      <span class="article-date" id="art-date"></span>
+      <span class="article-read-time" id="art-read-time"></span>
+    </div>
+    <h1 class="article-title" id="art-title"></h1>
+    <p class="article-excerpt" id="art-excerpt"></p>
+    <div class="article-divider"></div>
+    <div class="article-body" id="art-body"></div>
+
+    <div class="author-block">
+      <p class="author-label">About the Author</p>
+      <p class="author-name">Martijn de Jong</p>
+      <p class="author-bio">Founder of Digit-AI. Currently First Deputy CEO at TDB Bank Mongolia, leading a $19M enterprise digital, AI, technology and data transformation. Digit-AI provides AI due diligence, strategy, and governance advisory for PE firms, banks, and regulated enterprises.</p>
+    </div>
+
+    <div class="article-cta">
+      <h3>Ready to close the AI gap in your organisation?</h3>
+      <p>Digit-AI runs a 3-week AI Value &amp; Defensibility Audit — quantifying EBITDA upside and governance risk, feeding directly into your investment committee or board agenda.</p>
+      <a href="/#contact">Start a conversation</a>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-logo"><span></span>DIGIT-AI</div>
+  <p class="footer-tagline">Operator-Led AI Value Creation &nbsp;·&nbsp; digit-ai.ai</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+(async function() {
+  const slug = location.pathname.replace(/^\/articles\//, '').replace(/\/$/, '');
+  const loading = document.getElementById('loading');
+  const errorEl = document.getElementById('error');
+  const contentEl = document.getElementById('article-content');
+
+  try {
+    const res = await fetch('/cms/articles.json');
+    const data = await res.json();
+    const articles = data.articles || data;
+    const article = articles.find(a => a.slug === slug && a.published);
+
+    if (!article) { loading.style.display = 'none'; errorEl.style.display = ''; return; }
+
+    document.getElementById('page-title').textContent = article.title + ' — DIGIT-AI';
+    document.getElementById('page-description').content = article.excerpt;
+    document.getElementById('art-category').textContent = article.category;
+    document.getElementById('art-date').textContent = article.date;
+    document.getElementById('art-read-time').textContent = article.read_time;
+    document.getElementById('art-title').textContent = article.title;
+    document.getElementById('art-excerpt').textContent = article.excerpt;
+
+    const bodyEl = document.getElementById('art-body');
+    if (typeof marked !== 'undefined') {
+      bodyEl.innerHTML = marked.parse(article.body || '');
+    } else {
+      // Fallback: plain paragraphs if marked.js fails to load
+      bodyEl.innerHTML = (article.body || '').split('\n\n').map(p => `<p>${p}</p>`).join('');
+    }
+
+    loading.style.display = 'none';
+    contentEl.style.display = '';
+  } catch(e) {
+    loading.style.display = 'none';
+    errorEl.style.display = '';
+  }
+})();
+</script>
+</body>
+</html>

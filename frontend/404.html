@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — DIGIT-AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0A1428; --gold: #B8926A; --cream: #F5F0E8;
+    --cream-muted: rgba(245,240,232,0.4);
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy); color: var(--cream);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 40px 20px;
+  }
+  .logo { font-size: 15px; font-weight: 500; letter-spacing: 0.18em; color: var(--cream); text-decoration: none; display: flex; align-items: center; gap: 8px; justify-content: center; margin-bottom: 48px; }
+  .logo span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); display: inline-block; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(60px, 12vw, 120px); color: var(--gold); line-height: 1; margin-bottom: 16px; }
+  p { color: var(--cream-muted); font-size: 18px; font-weight: 300; margin-bottom: 40px; }
+  a.btn { display: inline-block; padding: 14px 32px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; transition: background 0.2s, color 0.2s; }
+  a.btn:hover { background: var(--gold); color: var(--navy); }
+</style>
+</head>
+<body>
+  <div>
+    <a href="/" class="logo"><span></span>DIGIT-AI</a>
+    <h1>404</h1>
+    <p>The page you are looking for does not exist.</p>
+    <a href="/" class="btn">Return to homepage</a>
+  </div>
+</body>
+</html>
