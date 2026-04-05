@@ -1734,9 +1734,11 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     });
     const data = await res.json();
     if (res.ok) {
-      msg.textContent = 'Message sent. We'll be in touch shortly.';
-      msg.className = 'success'; msg.style.display = 'block';
-      document.getElementById('contact-form').reset();
+      document.getElementById('contact-form').outerHTML =
+        '<div style="padding:40px 0; color:var(--cream-dim); font-size:16px; font-weight:300; line-height:1.8;">' +
+        '<p style="font-family:\'Cormorant Garamond\',serif; font-size:28px; font-weight:300; color:var(--cream); margin-bottom:16px;">Thank you for getting in touch.</p>' +
+        '<p>We\u2019ve received your message and will respond within one business day.</p>' +
+        '</div>';
     } else {
       msg.textContent = data.error || 'Something went wrong. Please try again.';
       msg.className = 'error'; msg.style.display = 'block';
