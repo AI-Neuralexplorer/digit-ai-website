@@ -11,7 +11,8 @@
     { "src": "/api/auth",        "dest": "backend/api/auth.js" },
     { "src": "/api/articles/(.*)", "dest": "backend/api/articles.js" },
     { "src": "/api/articles",    "dest": "backend/api/articles.js" },
-    { "src": "/api/contact",     "dest": "backend/api/contact.js" }
+    { "src": "/api/contact",     "dest": "backend/api/contact.js" },
+    { "src": "/api/track",       "dest": "backend/api/track.js" }
   ],
   "headers": [
     {

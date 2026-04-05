@@ -9,11 +9,13 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
-    --navy: #0A1428; --navy-mid: #1B2A4A; --gold: #B8926A;
-    --cream: #F5F0E8; --cream-dim: rgba(245,240,232,0.7); --cream-muted: rgba(245,240,232,0.4);
-    --border: rgba(184,146,106,0.2); --border-light: rgba(245,240,232,0.08);
+    --navy: #0A1428; --navy-mid: #1B2A4A; --navy-light: #243554;
+    --gold: #B8926A; --cream: #F5F0E8; --cream-dim: rgba(245,240,232,0.7);
+    --cream-muted: rgba(245,240,232,0.4); --border: rgba(184,146,106,0.2);
+    --border-light: rgba(245,240,232,0.08); --red: #e05252; --green: #4caf80;
   }
   body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--cream); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
   header {
     background: rgba(10,20,40,0.98); border-bottom: 1px solid var(--border);
     padding: 0 32px; height: 64px; display: flex; align-items: center; justify-content: space-between;
@@ -24,20 +26,62 @@
   .header-right { display: flex; gap: 16px; align-items: center; }
   .header-right a { font-size: 12px; color: var(--cream-muted); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s; }
   .header-right a:hover { color: var(--gold); }
-  main { max-width: 1200px; margin: 0 auto; padding: 40px 32px; }
-  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 32px; margin-bottom: 8px; }
-  .sub { font-size: 14px; color: var(--cream-muted); margin-bottom: 40px; }
+
+  main { max-width: 1300px; margin: 0 auto; padding: 40px 32px; }
+
+  /* AUTH WALL */
   #auth-wall { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; gap: 20px; }
   #auth-wall p { color: var(--cream-muted); font-size: 15px; }
   .field input { background: var(--navy-mid); border: 1px solid var(--border); color: var(--cream); padding: 11px 16px; font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; width: 280px; transition: border-color 0.2s; }
   .field input:focus { border-color: var(--gold); }
   .btn { background: var(--gold); color: var(--navy); border: none; padding: 11px 24px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; }
-  .plausible-wrapper { border: 1px solid var(--border-light); background: var(--navy-mid); overflow: hidden; }
-  .plausible-wrapper iframe { width: 100%; height: 800px; border: none; display: block; }
-  .setup-note { padding: 40px; text-align: center; }
-  .setup-note h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; margin-bottom: 12px; }
-  .setup-note p { font-size: 14px; color: var(--cream-muted); line-height: 1.7; max-width: 500px; margin: 0 auto 20px; }
-  .setup-note code { background: rgba(255,255,255,0.05); padding: 2px 6px; font-size: 13px; }
+
+  /* ANALYTICS */
+  #analytics-content { display: none; }
+  .page-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; flex-wrap: wrap; gap: 16px; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 32px; margin-bottom: 4px; }
+  .sub { font-size: 13px; color: var(--cream-muted); }
+
+  /* STATS CARDS */
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+  .stat-card { background: var(--navy-mid); border: 1px solid var(--border-light); padding: 20px 24px; }
+  .stat-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-muted); margin-bottom: 8px; }
+  .stat-value { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 300; color: var(--gold); }
+
+  /* FILTERS */
+  .filters { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; align-items: center; }
+  .filters select, .filters input {
+    background: var(--navy-mid); border: 1px solid var(--border); color: var(--cream);
+    padding: 8px 12px; font-family: 'DM Sans', sans-serif; font-size: 13px; outline: none;
+  }
+  .filters select:focus, .filters input:focus { border-color: var(--gold); }
+  .filter-label { font-size: 12px; color: var(--cream-muted); letter-spacing: 0.06em; }
+
+  /* TABLE */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border-light); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th { background: var(--navy-mid); padding: 12px 16px; text-align: left; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-muted); border-bottom: 1px solid var(--border); white-space: nowrap; }
+  tbody tr { border-bottom: 1px solid var(--border-light); transition: background 0.15s; }
+  tbody tr:hover { background: rgba(255,255,255,0.02); }
+  tbody td { padding: 11px 16px; color: var(--cream-dim); vertical-align: middle; }
+  tbody td.flag { font-size: 18px; text-align: center; }
+  tbody td.org { max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--cream); font-weight: 500; }
+  tbody td.page { color: var(--gold); font-family: monospace; font-size: 12px; }
+  tbody td.ref { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  tbody td.ts { color: var(--cream-muted); font-size: 12px; white-space: nowrap; }
+  .empty { padding: 60px; text-align: center; color: var(--cream-muted); font-size: 14px; }
+  .loading { padding: 60px; text-align: center; color: var(--cream-muted); }
+
+  /* UTM badge */
+  .utm-badge { display: inline-block; background: rgba(184,146,106,0.12); color: var(--gold); font-size: 10px; padding: 2px 6px; letter-spacing: 0.06em; margin-left: 4px; }
+
+  @media (max-width: 900px) {
+    .stats-row { grid-template-columns: 1fr 1fr; }
+    main { padding: 24px 16px; }
+  }
+  @media (max-width: 600px) {
+    .stats-row { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -58,42 +102,81 @@
     <p id="auth-err" style="color:#e05252;display:none">Incorrect password</p>
   </div>
 
-  <div id="analytics-content" style="display:none">
-    <h1>Analytics</h1>
-    <p class="sub">Live visitor data from Plausible Analytics — digit-ai.ai</p>
-
-    <div class="plausible-wrapper" id="plausible-frame-wrapper">
-      <!-- Plausible shared dashboard will be embedded here once configured -->
-      <div class="setup-note">
-        <h3>Set up Plausible Analytics</h3>
-        <p>To enable this dashboard:</p>
-        <p>
-          1. Sign up at <strong>plausible.io</strong><br>
-          2. Add <strong>digit-ai.ai</strong> as a site<br>
-          3. Go to Site Settings → Visibility → make the dashboard public or shared<br>
-          4. Copy the shared dashboard URL and add it to Vercel environment variables as <code>PLAUSIBLE_DASHBOARD_URL</code><br>
-          5. The iframe will automatically load once the variable is set
-        </p>
+  <div id="analytics-content">
+    <div class="page-header">
+      <div>
+        <h1>Visitor Analytics</h1>
+        <p class="sub" id="last-updated">Loading…</p>
       </div>
+      <button class="btn" onclick="loadData()" style="white-space:nowrap;">↻ Refresh</button>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card"><div class="stat-label">Total Visits</div><div class="stat-value" id="stat-total">—</div></div>
+      <div class="stat-card"><div class="stat-label">Today</div><div class="stat-value" id="stat-today">—</div></div>
+      <div class="stat-card"><div class="stat-label">Countries</div><div class="stat-value" id="stat-countries">—</div></div>
+      <div class="stat-card"><div class="stat-label">Top Source</div><div class="stat-value" id="stat-topsource" style="font-size:20px;padding-top:8px;">—</div></div>
+    </div>
+
+    <div class="filters">
+      <span class="filter-label">Filter:</span>
+      <select id="filter-page" onchange="renderTable()">
+        <option value="">All pages</option>
+        <option value="/">Homepage</option>
+      </select>
+      <select id="filter-country" onchange="renderTable()">
+        <option value="">All countries</option>
+      </select>
+      <input type="text" id="filter-org" placeholder="Search org / company…" oninput="renderTable()" style="width:200px;">
+      <select id="filter-limit" onchange="renderTable()">
+        <option value="100">Last 100</option>
+        <option value="250">Last 250</option>
+        <option value="500">Last 500</option>
+        <option value="0">All</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <div id="table-loading" class="loading">Loading visitor data…</div>
+      <table id="visits-table" style="display:none">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Time</th>
+            <th>Page</th>
+            <th>Organisation / ISP</th>
+            <th>Location</th>
+            <th>Referrer</th>
+            <th>UTM Source</th>
+          </tr>
+        </thead>
+        <tbody id="visits-body"></tbody>
+      </table>
+      <div id="table-empty" class="empty" style="display:none">No visits recorded yet.</div>
     </div>
   </div>
 </main>
 
 <script>
+const API = 'https://backend-psi-vert.vercel.app/api';
+let token = localStorage.getItem('digit_ai_token');
+let allVisits = [];
+
 async function checkAuth() {
   const pw = document.getElementById('pw').value;
   const errEl = document.getElementById('auth-err');
   errEl.style.display = 'none';
   try {
-    const res = await fetch('https://backend-psi-vert.vercel.app/api/auth', {
+    const res = await fetch(API + '/auth', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ password: pw })
     });
     if (!res.ok) { errEl.style.display = 'block'; return; }
     const data = await res.json();
-    localStorage.setItem('digit_ai_token', data.token);
-    showAnalytics(data.plausibleUrl);
+    token = data.token;
+    localStorage.setItem('digit_ai_token', token);
+    showAnalytics();
   } catch(e) {
     errEl.textContent = 'Connection error';
     errEl.style.display = 'block';
@@ -101,22 +184,135 @@ async function checkAuth() {
 }
 document.getElementById('pw').addEventListener('keydown', e => { if (e.key === 'Enter') checkAuth(); });
 
-function showAnalytics(plausibleUrl) {
+function showAnalytics() {
   document.getElementById('auth-wall').style.display = 'none';
   document.getElementById('analytics-content').style.display = 'block';
-  if (plausibleUrl) {
-    document.getElementById('plausible-frame-wrapper').innerHTML =
-      `<iframe src="${plausibleUrl}" scrolling="no" frameborder="0"></iframe>`;
+  loadData();
+}
+
+async function loadData() {
+  document.getElementById('table-loading').style.display = 'block';
+  document.getElementById('visits-table').style.display = 'none';
+  document.getElementById('table-empty').style.display = 'none';
+  try {
+    const res = await fetch(API + '/track', { headers: { 'Authorization': 'Bearer ' + token } });
+    if (res.status === 401) { localStorage.removeItem('digit_ai_token'); location.reload(); return; }
+    const data = await res.json();
+    allVisits = data.visits || [];
+    populateFilters();
+    renderStats();
+    renderTable();
+    document.getElementById('last-updated').textContent = 'Last refreshed: ' + new Date().toLocaleTimeString();
+  } catch(e) {
+    document.getElementById('table-loading').textContent = 'Failed to load data. Check connection.';
   }
 }
 
+function populateFilters() {
+  // Countries
+  const countries = [...new Set(allVisits.map(v => v.country).filter(Boolean))].sort();
+  const sel = document.getElementById('filter-country');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">All countries</option>' +
+    countries.map(c => `<option value="${escHtml(c)}">${escHtml(c)}</option>`).join('');
+  if (cur) sel.value = cur;
+
+  // Pages
+  const pages = [...new Set(allVisits.map(v => v.page).filter(Boolean))].sort();
+  const psel = document.getElementById('filter-page');
+  const pcur = psel.value;
+  psel.innerHTML = '<option value="">All pages</option>' +
+    pages.map(p => `<option value="${escHtml(p)}">${escHtml(p)}</option>`).join('');
+  if (pcur) psel.value = pcur;
+}
+
+function renderStats() {
+  document.getElementById('stat-total').textContent = allVisits.length.toLocaleString();
+
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const todayCount = allVisits.filter(v => v.ts && v.ts.startsWith(todayStr)).length;
+  document.getElementById('stat-today').textContent = todayCount.toLocaleString();
+
+  const countryCount = new Set(allVisits.map(v => v.country).filter(Boolean)).size;
+  document.getElementById('stat-countries').textContent = countryCount;
+
+  // Top UTM source or referrer domain
+  const sources = {};
+  allVisits.forEach(v => {
+    const src = v.utm_source || (v.referrer ? new URL(v.referrer).hostname.replace('www.', '') : '') || 'direct';
+    sources[src] = (sources[src] || 0) + 1;
+  });
+  const topSrc = Object.entries(sources).sort((a, b) => b[1] - a[1])[0];
+  document.getElementById('stat-topsource').textContent = topSrc ? topSrc[0] : '—';
+}
+
+function renderTable() {
+  const filterPage = document.getElementById('filter-page').value;
+  const filterCountry = document.getElementById('filter-country').value;
+  const filterOrg = document.getElementById('filter-org').value.toLowerCase();
+  const limit = parseInt(document.getElementById('filter-limit').value) || 0;
+
+  let visits = allVisits.filter(v => {
+    if (filterPage && v.page !== filterPage) return false;
+    if (filterCountry && v.country !== filterCountry) return false;
+    if (filterOrg && !(v.org || '').toLowerCase().includes(filterOrg)) return false;
+    return true;
+  });
+
+  if (limit > 0) visits = visits.slice(0, limit);
+
+  document.getElementById('table-loading').style.display = 'none';
+
+  if (!visits.length) {
+    document.getElementById('visits-table').style.display = 'none';
+    document.getElementById('table-empty').style.display = 'block';
+    return;
+  }
+
+  document.getElementById('table-empty').style.display = 'none';
+  document.getElementById('visits-table').style.display = 'table';
+
+  const rows = visits.map(v => {
+    const ts = v.ts ? new Date(v.ts).toLocaleString('en-GB', { day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' }) : '';
+    const flag = v.countryCode ? countryFlag(v.countryCode) : '';
+    const location = [v.city, v.country].filter(Boolean).join(', ');
+    const ref = v.referrer ? `<span title="${escHtml(v.referrer)}">${escHtml(refDomain(v.referrer))}</span>` : '<span style="color:var(--cream-muted)">direct</span>';
+    const utmBadge = v.utm_source ? `<span class="utm-badge">${escHtml(v.utm_source)}</span>` : '';
+    return `<tr>
+      <td class="flag">${flag}</td>
+      <td class="ts">${escHtml(ts)}</td>
+      <td class="page">${escHtml(v.page || '/')}</td>
+      <td class="org" title="${escHtml(v.org || '')}">${escHtml(v.org || '—')}</td>
+      <td>${escHtml(location) || '<span style="color:var(--cream-muted)">Unknown</span>'}</td>
+      <td class="ref">${ref}</td>
+      <td>${utmBadge || '<span style="color:var(--cream-muted)">—</span>'}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('visits-body').innerHTML = rows;
+}
+
+function refDomain(url) {
+  try { return new URL(url).hostname.replace('www.', ''); } catch { return url; }
+}
+
+function countryFlag(code) {
+  if (!code || code.length !== 2) return '';
+  const offset = 127397;
+  return String.fromCodePoint(code.charCodeAt(0) + offset, code.charCodeAt(1) + offset);
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
 // Auto-login if token stored
-const token = localStorage.getItem('digit_ai_token');
 if (token) {
-  fetch('https://backend-psi-vert.vercel.app/api/auth/verify', { headers: { 'Authorization': 'Bearer ' + token } })
-    .then(r => r.ok ? r.json() : null)
-    .then(d => { if (d) showAnalytics(d.plausibleUrl); })
+  fetch(API + '/auth/verify', { headers: { 'Authorization': 'Bearer ' + token } })
+    .then(r => r.ok ? showAnalytics() : null)
     .catch(() => {});
+} else {
+  document.getElementById('auth-wall').style.display = 'flex';
 }
 </script>
 </body>
