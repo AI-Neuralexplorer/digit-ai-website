@@ -732,6 +732,91 @@
   }
   .cta-contact a:hover { text-decoration: underline; }
 
+  /* ── CONTACT ── */
+  #contact {
+    padding: 120px 5vw;
+    border-top: 1px solid var(--border-light);
+  }
+  .contact-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .contact-intro .section-label { margin-bottom: 16px; }
+  .contact-intro h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3.5vw, 42px);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .contact-intro p {
+    font-size: 15px;
+    color: var(--cream-muted);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  .contact-direct {
+    font-size: 13px;
+    color: var(--cream-muted);
+    letter-spacing: 0.05em;
+  }
+  .contact-direct a { color: var(--gold); text-decoration: none; }
+  .contact-direct a:hover { text-decoration: underline; }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .cf-field { display: flex; flex-direction: column; gap: 6px; }
+  .cf-field label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cream-muted);
+  }
+  .cf-field input, .cf-field textarea {
+    background: var(--navy-mid);
+    border: 1px solid var(--border);
+    color: var(--cream);
+    padding: 12px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .cf-field input:focus, .cf-field textarea:focus { border-color: var(--gold); }
+  .cf-field textarea { resize: vertical; min-height: 130px; }
+  .cf-submit { margin-top: 8px; }
+  .cf-submit button {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy);
+    background: var(--gold);
+    padding: 14px 36px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .cf-submit button:hover { background: var(--gold-light); }
+  .cf-submit button:disabled { opacity: 0.6; cursor: not-allowed; }
+  #cf-msg {
+    font-size: 13px;
+    margin-top: 12px;
+    display: none;
+  }
+  #cf-msg.success { color: #4caf80; }
+  #cf-msg.error { color: #e05252; }
+  @media (max-width: 860px) {
+    .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+    .cf-row { grid-template-columns: 1fr; }
+  }
+
   /* ── FOOTER ── */
   footer {
     padding: 48px 5vw 24px;
@@ -1134,6 +1219,7 @@
     <li><a href="#icp">Who We Serve</a></li>
     <li><a href="#why">Why Digit-AI</a></li>
     <li><a href="#perspectives">Perspectives</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="mailto:hello@digit-ai.ai" class="nav-cta">Start a Conversation</a>
   <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
@@ -1147,6 +1233,7 @@
     <li><a href="#icp" onclick="closeMobileNav()">Who We Serve</a></li>
     <li><a href="#why" onclick="closeMobileNav()">Why Digit-AI</a></li>
     <li><a href="#perspectives" onclick="closeMobileNav()">Perspectives</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
   </ul>
   <a href="mailto:hello@digit-ai.ai" class="mobile-nav-cta">Start a Conversation</a>
 </div>
@@ -1395,6 +1482,45 @@
 </section>
 
 
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-intro">
+      <p class="section-label">Contact</p>
+      <div class="gold-rule"></div>
+      <h2>Start the conversation.</h2>
+      <p>Whether you're assessing an acquisition, building an AI strategy, or navigating regulatory exposure — we'd like to understand your situation before proposing anything.</p>
+      <p class="contact-direct">Or email directly: <a href="mailto:hello@digit-ai.ai">hello@digit-ai.ai</a></p>
+    </div>
+    <div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-name">Name *</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="cf-field">
+            <label for="cf-email">Email *</label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="cf-company">Company</label>
+          <input type="text" id="cf-company" name="company" placeholder="Organisation (optional)">
+        </div>
+        <div class="cf-field">
+          <label for="cf-message">Message *</label>
+          <textarea id="cf-message" name="message" placeholder="Briefly describe what you're working on…" required></textarea>
+        </div>
+        <div class="cf-submit">
+          <button type="submit" id="cf-btn">Send Message</button>
+          <p id="cf-msg"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-logo"><span></span>DIGIT-AI</div>
@@ -1583,6 +1709,44 @@ window.addEventListener('scroll', () => {
   window.addEventListener('resize', function() {
     if (window.innerWidth > 900) closeMobileNav();
   });
+</script>
+<script>
+// Contact form
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('cf-btn');
+  const msg = document.getElementById('cf-msg');
+  const name = document.getElementById('cf-name').value.trim();
+  const email = document.getElementById('cf-email').value.trim();
+  const company = document.getElementById('cf-company').value.trim();
+  const message = document.getElementById('cf-message').value.trim();
+  if (!name || !email || !message) {
+    msg.textContent = 'Please fill in all required fields.';
+    msg.className = 'error'; msg.style.display = 'block'; return;
+  }
+  btn.disabled = true; btn.textContent = 'Sending…';
+  msg.style.display = 'none';
+  try {
+    const res = await fetch('https://backend-psi-vert.vercel.app/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, company, message })
+    });
+    const data = await res.json();
+    if (res.ok) {
+      msg.textContent = 'Message sent. We'll be in touch shortly.';
+      msg.className = 'success'; msg.style.display = 'block';
+      document.getElementById('contact-form').reset();
+    } else {
+      msg.textContent = data.error || 'Something went wrong. Please try again.';
+      msg.className = 'error'; msg.style.display = 'block';
+    }
+  } catch(err) {
+    msg.textContent = 'Connection error. Please email hello@digit-ai.ai directly.';
+    msg.className = 'error'; msg.style.display = 'block';
+  }
+  btn.disabled = false; btn.textContent = 'Send Message';
+});
 </script>
 <script>
 // Visitor analytics — fire and forget
