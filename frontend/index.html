@@ -1493,7 +1493,7 @@
       <p class="contact-direct">Or email directly: <a href="mailto:hello@digit-ai.ai">hello@digit-ai.ai</a></p>
     </div>
     <div>
-      <form class="contact-form" id="contact-form" method="post" action="#contact" novalidate>
+      <div class="contact-form" id="contact-form">
         <div class="cf-row">
           <div class="cf-field">
             <label for="cf-name">Name *</label>
@@ -1513,10 +1513,10 @@
           <textarea id="cf-message" name="message" placeholder="Briefly describe what you're working on…" required></textarea>
         </div>
         <div class="cf-submit">
-          <button type="submit" id="cf-btn">Send Message</button>
+          <button type="button" id="cf-btn" onclick="submitContactForm()">Send Message</button>
           <p id="cf-msg"></p>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </section>
@@ -1712,8 +1712,7 @@ window.addEventListener('scroll', () => {
 </script>
 <script>
 // Contact form
-document.getElementById('contact-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
+async function submitContactForm() {
   const btn = document.getElementById('cf-btn');
   const msg = document.getElementById('cf-msg');
   const name = document.getElementById('cf-name').value.trim();
@@ -1734,7 +1733,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     });
     const data = await res.json();
     if (res.ok) {
-      document.getElementById('contact-form').outerHTML =
+      document.getElementById('contact-form').innerHTML =
         '<div style="padding:40px 0; color:var(--cream-dim); font-size:16px; font-weight:300; line-height:1.8;">' +
         '<p style="font-family:\'Cormorant Garamond\',serif; font-size:28px; font-weight:300; color:var(--cream); margin-bottom:16px;">Thank you for getting in touch.</p>' +
         '<p>We\u2019ve received your message and will respond within one business day.</p>' +
@@ -1748,7 +1747,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     msg.className = 'error'; msg.style.display = 'block';
   }
   btn.disabled = false; btn.textContent = 'Send Message';
-});
+}
 </script>
 <script>
 // Visitor analytics — fire and forget
