@@ -13,7 +13,9 @@ if (!ADMIN_PASSWORD || !JWT_SECRET) {
 }
 
 module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://digit-ai.ai');
+  const origin = req.headers.origin || '';
+  const allowedOrigins = ['https://www.digit-ai.ai', 'https://digit-ai.ai'];
+  res.setHeader('Access-Control-Allow-Origin', allowedOrigins.includes(origin) ? origin : allowedOrigins[0]);
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
