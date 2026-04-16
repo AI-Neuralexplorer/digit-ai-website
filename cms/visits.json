@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-16T15:07:22.425Z",
+      "page": "/",
+      "referrer": "https://www.linkedin.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "New York",
+      "city": "New York",
+      "org": "Frantic, LLC."
+    },
+    {
       "ts": "2026-04-15T06:40:31.188Z",
       "page": "/",
       "referrer": "",
