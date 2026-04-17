@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-17T05:20:55.272Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "region": "North Holland",
+      "city": "Velserbroek",
+      "org": "ISP Fabriek B.V."
+    },
+    {
       "ts": "2026-04-16T15:07:22.425Z",
       "page": "/",
       "referrer": "https://www.linkedin.com/",
