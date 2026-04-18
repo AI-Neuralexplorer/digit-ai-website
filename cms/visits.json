@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-18T11:15:26.683Z",
+      "page": "/",
+      "referrer": "https://www.linkedin.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "region": "South Holland",
+      "city": "Rotterdam",
+      "org": "Liberty Global B.V."
+    },
+    {
       "ts": "2026-04-18T09:04:06.579Z",
       "page": "/",
       "referrer": "https://www.linkedin.com/",
