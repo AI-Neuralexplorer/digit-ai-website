@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-20T12:47:16.522Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "South Africa",
+      "countryCode": "ZA",
+      "region": "Gauteng",
+      "city": "Johannesburg",
+      "org": "AFRIHOST SP (PTY) LTD"
+    },
+    {
       "ts": "2026-04-19T22:14:58.185Z",
       "page": "/",
       "referrer": "https://www.google.com/",
