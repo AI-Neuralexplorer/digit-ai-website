@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-22T17:04:21.011Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Belgium",
+      "countryCode": "BE",
+      "region": "Wallonia",
+      "city": "Liège",
+      "org": "Telenet Group BVBA/SPRL"
+    },
+    {
       "ts": "2026-04-22T08:44:52.010Z",
       "page": "/",
       "referrer": "",
