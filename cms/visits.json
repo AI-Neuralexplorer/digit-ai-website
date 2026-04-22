@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-22T08:44:52.010Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "North Rhine-Westphalia",
+      "city": "Düsseldorf",
+      "org": "Telekom Deutschland GmbH"
+    },
+    {
       "ts": "2026-04-22T07:46:29.685Z",
       "page": "/",
       "referrer": "",
