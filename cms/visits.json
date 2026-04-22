@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-22T07:46:29.685Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Lower Saxony",
+      "city": "Bad Pyrmont",
+      "org": "Telekom Deutschland GmbH"
+    },
+    {
       "ts": "2026-04-22T04:41:14.730Z",
       "page": "/",
       "referrer": "",
