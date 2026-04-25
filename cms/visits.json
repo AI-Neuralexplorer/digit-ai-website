@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-25T11:43:43.511Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Sweden",
+      "countryCode": "SE",
+      "region": "Jönköping",
+      "city": "Jönköping",
+      "org": "Com Hem AB"
+    },
+    {
       "ts": "2026-04-24T05:27:28.911Z",
       "page": "/",
       "referrer": "https://www.google.com/",
