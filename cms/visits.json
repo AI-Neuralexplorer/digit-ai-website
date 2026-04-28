@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-04-28T16:17:23.459Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "State of Berlin",
+      "city": "Berlin",
+      "org": "Deutsche Telekom AG"
+    },
+    {
       "ts": "2026-04-28T01:12:39.616Z",
       "page": "/",
       "referrer": "",
