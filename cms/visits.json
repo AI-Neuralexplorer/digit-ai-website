@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-02T19:46:05.531Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Canada",
+      "countryCode": "CA",
+      "region": "Quebec",
+      "city": "Beauharnois",
+      "org": "B.V., Dataprovider"
+    },
+    {
       "ts": "2026-04-30T09:52:26.842Z",
       "page": "/",
       "referrer": "",
