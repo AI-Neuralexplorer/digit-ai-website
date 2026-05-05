@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-05T09:04:53.872Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Canada",
+      "countryCode": "CA",
+      "region": "Ontario",
+      "city": "Toronto",
+      "org": "VPN Consumer Toronto, Canada"
+    },
+    {
       "ts": "2026-05-05T07:41:42.339Z",
       "page": "/",
       "referrer": "",
