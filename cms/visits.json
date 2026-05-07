@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-07T08:53:46.088Z",
+      "page": "/",
+      "referrer": "https://duckduckgo.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Bavaria",
+      "city": "Nuremberg",
+      "org": "Telekom Deutschland GmbH"
+    },
+    {
       "ts": "2026-05-07T08:29:02.266Z",
       "page": "/",
       "referrer": "https://www.google.com/",
