@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-09T16:24:12.396Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Hesse",
+      "city": "Frankfurt am Main",
+      "org": "AWS EC2 (eu-central-1)"
+    },
+    {
       "ts": "2026-05-09T08:38:03.570Z",
       "page": "/",
       "referrer": "https://www.google.com/",
