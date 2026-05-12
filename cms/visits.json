@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-12T04:10:12.409Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Hesse",
+      "city": "Frankfurt am Main",
+      "org": "Cdnext FRA"
+    },
+    {
       "ts": "2026-05-11T08:00:28.051Z",
       "page": "/",
       "referrer": "",
