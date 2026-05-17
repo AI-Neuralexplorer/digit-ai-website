@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-17T12:15:03.176Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "Limburg",
+      "city": "Maastricht",
+      "org": "KPN Mobile The Netherlands B.V."
+    },
+    {
       "ts": "2026-05-17T12:07:02.620Z",
       "page": "/",
       "referrer": "https://www.google.com/",
