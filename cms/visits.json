@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-19T15:57:24.357Z",
+      "page": "/",
+      "referrer": "https://www.digit-ai.ai/articles/ai-due-diligence-gap/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "West Java",
+      "city": "Depok",
+      "org": ""
+    },
+    {
       "ts": "2026-05-19T11:52:36.289Z",
       "page": "/",
       "referrer": "",
