@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-20T12:14:27.883Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "South Carolina",
+      "city": "Charleston",
+      "org": "Google Public DNS (chs)"
+    },
+    {
       "ts": "2026-05-20T11:27:39.547Z",
       "page": "/",
       "referrer": "",
