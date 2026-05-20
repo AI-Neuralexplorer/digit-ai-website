@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-20T07:08:49.801Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "region": "São Paulo",
+      "city": "São Paulo",
+      "org": "Google Public DNS (gru)"
+    },
+    {
       "ts": "2026-05-20T07:00:48.327Z",
       "page": "/",
       "referrer": "",
