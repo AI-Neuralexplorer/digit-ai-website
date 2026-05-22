@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-22T04:16:47.452Z",
+      "page": "/",
+      "referrer": "https://www.digit-ai.ai/articles/ai-due-diligence-gap/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Japan",
+      "countryCode": "JP",
+      "region": "Tokyo",
+      "city": "Tokyo",
+      "org": "Cdnext TYO"
+    },
+    {
       "ts": "2026-05-21T18:35:38.317Z",
       "page": "/",
       "referrer": "",
