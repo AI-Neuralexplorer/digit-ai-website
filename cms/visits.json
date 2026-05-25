@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-25T20:10:28.856Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Romania",
+      "countryCode": "RO",
+      "region": "Satu Mare County",
+      "city": "Carei",
+      "org": "RCS & RDS Residential"
+    },
+    {
       "ts": "2026-05-25T15:43:42.519Z",
       "page": "/",
       "referrer": "",
