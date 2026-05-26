@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-26T13:45:50.550Z",
+      "page": "/",
+      "referrer": "https://www.digit-ai.ai/articles/ai-due-diligence-gap/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Japan",
+      "countryCode": "JP",
+      "region": "Tokyo",
+      "city": "Shinagawa",
+      "org": "M247 Ltd Tokyo"
+    },
+    {
       "ts": "2026-05-26T13:40:44.318Z",
       "page": "/",
       "referrer": "",
