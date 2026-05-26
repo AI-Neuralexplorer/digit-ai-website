@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-26T10:19:34.830Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Saxony",
+      "city": "Falkenstein",
+      "org": "Hetzner"
+    },
+    {
       "ts": "2026-05-26T09:57:19.542Z",
       "page": "/",
       "referrer": "",
