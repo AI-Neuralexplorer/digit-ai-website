@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-29T15:20:25.348Z",
+      "page": "/",
+      "referrer": "https://duckduckgo.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Spain",
+      "countryCode": "ES",
+      "region": "Madrid",
+      "city": "Chamartin",
+      "org": "Cloudflare WARP"
+    },
+    {
       "ts": "2026-05-28T16:28:05.839Z",
       "page": "/",
       "referrer": "",
