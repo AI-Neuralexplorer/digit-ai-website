@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-05-30T06:13:53.264Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "region": "North Holland",
+      "city": "Velserbroek",
+      "org": "ISP Fabriek B.V."
+    },
+    {
       "ts": "2026-05-29T15:20:25.348Z",
       "page": "/",
       "referrer": "https://duckduckgo.com/",
