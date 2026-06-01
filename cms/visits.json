@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-01T20:59:13.971Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Brandenburg",
+      "city": "Brandenburg",
+      "org": "Artikel10 e.V"
+    },
+    {
       "ts": "2026-06-01T15:21:03.556Z",
       "page": "/",
       "referrer": "https://www.digit-ai.ai/articles/ai-due-diligence-gap/",
