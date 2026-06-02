@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-02T12:59:17.422Z",
+      "page": "/",
+      "referrer": "https://www.bing.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Hesse",
+      "city": "Bad Camberg",
+      "org": "INFORENT GmbH"
+    },
+    {
       "ts": "2026-06-02T09:40:41.055Z",
       "page": "/",
       "referrer": "https://www.google.com/",
