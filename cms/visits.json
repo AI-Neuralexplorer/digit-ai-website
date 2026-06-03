@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-03T21:49:47.833Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Nicaragua",
+      "countryCode": "NI",
+      "region": "Chontales Department",
+      "city": "Juigalpa",
+      "org": "M247 Europe SRL"
+    },
+    {
       "ts": "2026-06-03T06:44:28.122Z",
       "page": "/",
       "referrer": "",
