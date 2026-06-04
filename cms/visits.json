@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-04T17:23:01.455Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Sweden",
+      "countryCode": "SE",
+      "region": "Stockholm County",
+      "city": "Bandhagen",
+      "org": "General Private NET A980"
+    },
+    {
       "ts": "2026-06-04T10:30:37.312Z",
       "page": "/",
       "referrer": "https://www.google.com/",
