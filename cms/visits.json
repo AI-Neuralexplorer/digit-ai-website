@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-04T10:30:37.312Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Sri Lanka",
+      "countryCode": "LK",
+      "region": "Western Province",
+      "city": "Seeduwa",
+      "org": "Dialog Axiata Plc"
+    },
+    {
       "ts": "2026-06-04T09:17:40.126Z",
       "page": "/",
       "referrer": "https://www.digit-ai.ai/articles/ai-due-diligence-gap/",
