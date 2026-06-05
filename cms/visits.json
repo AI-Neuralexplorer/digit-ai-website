@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-05T09:51:57.018Z",
+      "page": "/",
+      "referrer": "https://www.bing.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "region": "England",
+      "city": "Carnforth",
+      "org": ""
+    },
+    {
       "ts": "2026-06-05T09:34:03.386Z",
       "page": "/",
       "referrer": "",
