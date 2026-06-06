@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-06T11:44:16.124Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Washington",
+      "city": "Seattle",
+      "org": "Datacamp Limited"
+    },
+    {
       "ts": "2026-06-06T05:14:38.546Z",
       "page": "/",
       "referrer": "https://www.google.com/",
