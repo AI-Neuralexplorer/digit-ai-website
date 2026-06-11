@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-11T08:24:36.845Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Oklahoma",
+      "city": "Pryor",
+      "org": "Google LLC"
+    },
+    {
       "ts": "2026-06-11T07:29:52.846Z",
       "page": "/",
       "referrer": "https://www.digit-ai.ai/articles/ai-strategy-wish-list/",
