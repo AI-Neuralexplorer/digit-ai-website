@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-11T07:29:52.846Z",
+      "page": "/",
+      "referrer": "https://www.digit-ai.ai/articles/ai-strategy-wish-list/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Japan",
+      "countryCode": "JP",
+      "region": "Tokyo",
+      "city": "Tokyo",
+      "org": "DataCamp Limited"
+    },
+    {
       "ts": "2026-06-11T05:28:31.426Z",
       "page": "/",
       "referrer": "",
