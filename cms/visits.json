@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-11T05:28:31.426Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "California",
+      "city": "Mountain View",
+      "org": "Google LLC"
+    },
+    {
       "ts": "2026-06-11T02:00:34.636Z",
       "page": "/",
       "referrer": "https://www.digit-ai.ai/articles/ai-strategy-wish-list/",
