@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-11T02:00:34.636Z",
+      "page": "/",
+      "referrer": "https://www.digit-ai.ai/articles/ai-strategy-wish-list/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Mongolia",
+      "countryCode": "MN",
+      "region": "Ulaanbaatar",
+      "city": "Ulan Bator",
+      "org": "Mobicom Networks LLC"
+    },
+    {
       "ts": "2026-06-10T18:08:43.781Z",
       "page": "/",
       "referrer": "https://www.google.com/",
