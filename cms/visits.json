@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-12T07:48:43.064Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Japan",
+      "countryCode": "JP",
+      "region": "Tokyo",
+      "city": "Shinagawa",
+      "org": "M247 LTD"
+    },
+    {
       "ts": "2026-06-11T21:33:18.429Z",
       "page": "/",
       "referrer": "",
