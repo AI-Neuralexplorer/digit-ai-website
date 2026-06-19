@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-19T09:25:40.398Z",
+      "page": "/",
+      "referrer": "https://duckduckgo.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Bavaria",
+      "city": "Nuremberg",
+      "org": "netcup GmbH"
+    },
+    {
       "ts": "2026-06-19T08:59:15.750Z",
       "page": "/",
       "referrer": "",
