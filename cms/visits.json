@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-22T00:23:06.710Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Slovakia",
+      "countryCode": "SK",
+      "region": "Bratislava Region",
+      "city": "Bratislava",
+      "org": "Orange Slovensko, a.s."
+    },
+    {
       "ts": "2026-06-21T16:09:22.267Z",
       "page": "/",
       "referrer": "",
