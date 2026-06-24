@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-24T18:58:47.144Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Oklahoma",
+      "city": "Pryor",
+      "org": "Google LLC"
+    },
+    {
       "ts": "2026-06-24T06:42:32.797Z",
       "page": "/",
       "referrer": "",
