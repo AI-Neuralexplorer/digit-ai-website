@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-26T09:07:00.467Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Kenya",
+      "countryCode": "KE",
+      "region": "Nairobi County",
+      "city": "Imara Daima Estate",
+      "org": "Optinode Group LLP"
+    },
+    {
       "ts": "2026-06-26T09:06:21.846Z",
       "page": "/",
       "referrer": "https://www.google.com/",
