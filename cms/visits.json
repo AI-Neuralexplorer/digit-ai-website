@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-06-27T09:49:15.668Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Albania",
+      "countryCode": "AL",
+      "region": "Vlorë County",
+      "city": "Vlorë",
+      "org": "Nisatel LTD"
+    },
+    {
       "ts": "2026-06-27T09:07:01.944Z",
       "page": "/",
       "referrer": "https://www.google.com/",
