@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-02T13:05:03.072Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "North Holland",
+      "city": "Amsterdam",
+      "org": "Zscaler Ams2"
+    },
+    {
       "ts": "2026-07-02T09:31:39.090Z",
       "page": "/",
       "referrer": "",
