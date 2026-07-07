@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-07T01:30:49.130Z",
+      "page": "/",
+      "referrer": "https://it.search.yahoo.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Italy",
+      "countryCode": "IT",
+      "region": "Lombardy",
+      "city": "Milano",
+      "org": "Iliad Italia S.p.A"
+    },
+    {
       "ts": "2026-07-06T13:28:31.687Z",
       "page": "/",
       "referrer": "https://www.google.com/",
