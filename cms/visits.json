@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-16T22:02:53.266Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Nigeria",
+      "countryCode": "NG",
+      "region": "Rivers State",
+      "city": "Port Harcourt",
+      "org": "MTN Nigeria"
+    },
+    {
       "ts": "2026-07-16T13:21:19.181Z",
       "page": "/",
       "referrer": "",
