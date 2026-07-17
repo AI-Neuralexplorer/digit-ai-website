@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-17T02:50:27.542Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Thailand",
+      "countryCode": "TH",
+      "region": "Chiang Rai",
+      "city": "Chiang Rai",
+      "org": "Advanced Wireless Network Company Limited"
+    },
+    {
       "ts": "2026-07-16T22:04:40.255Z",
       "page": "/",
       "referrer": "",
