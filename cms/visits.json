@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-18T20:01:05.263Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "region": "São Paulo",
+      "city": "São Paulo",
+      "org": "HostRoyale Technologies"
+    },
+    {
       "ts": "2026-07-17T08:52:19.697Z",
       "page": "/",
       "referrer": "",
