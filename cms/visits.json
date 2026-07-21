@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-21T10:21:45.433Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Austria",
+      "countryCode": "AT",
+      "region": "Lower Austria",
+      "city": "Deutsch-Wagram",
+      "org": "High Speed Internet Customers"
+    },
+    {
       "ts": "2026-07-21T10:15:28.725Z",
       "page": "/",
       "referrer": "https://www.google.com/",
