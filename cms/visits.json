@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-26T04:06:59.904Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Spain",
+      "countryCode": "ES",
+      "region": "Andalusia",
+      "city": "Málaga",
+      "org": "M247 Ltd Lagos"
+    },
+    {
       "ts": "2026-07-25T11:54:03.294Z",
       "page": "/",
       "referrer": "",
