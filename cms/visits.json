@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-07-28T17:30:10.237Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Texas",
+      "city": "Dallas",
+      "org": "iCloud Private Relay"
+    },
+    {
       "ts": "2026-07-28T10:50:01.690Z",
       "page": "/",
       "referrer": "",
