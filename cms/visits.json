@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-02T08:18:53.427Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Canada",
+      "countryCode": "CA",
+      "region": "Alberta",
+      "city": "Edmonton",
+      "org": "TELUS-FIBRE-EDTNABXL"
+    },
+    {
       "ts": "2026-08-02T08:17:46.346Z",
       "page": "/",
       "referrer": "",
