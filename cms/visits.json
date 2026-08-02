@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-02T00:06:02.172Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Canada",
+      "countryCode": "CA",
+      "region": "Quebec",
+      "city": "Montreal",
+      "org": "Dataprovider B.V."
+    },
+    {
       "ts": "2026-07-31T18:24:23.763Z",
       "page": "/",
       "referrer": "",
