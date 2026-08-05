@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-05T16:53:47.438Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Kenya",
+      "countryCode": "KE",
+      "region": "Nairobi County",
+      "city": "Nairobi",
+      "org": "VOS AFRICA"
+    },
+    {
       "ts": "2026-08-05T04:46:12.040Z",
       "page": "/",
       "referrer": "https://www.google.com/",
