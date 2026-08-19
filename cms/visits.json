@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-19T09:29:15.077Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Lebanon",
+      "countryCode": "LB",
+      "region": "Beirut",
+      "city": "Beirut",
+      "org": "GlobalProof s.a."
+    },
+    {
       "ts": "2026-08-19T08:10:45.512Z",
       "page": "/",
       "referrer": "",
