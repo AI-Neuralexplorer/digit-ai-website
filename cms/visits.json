@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-24T16:48:54.138Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Spain",
+      "countryCode": "ES",
+      "region": "Madrid",
+      "city": "Collado Villalba",
+      "org": ""
+    },
+    {
       "ts": "2026-08-24T10:16:31.829Z",
       "page": "/",
       "referrer": "https://www.google.com/",
