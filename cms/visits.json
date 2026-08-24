@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-24T08:38:14.422Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Czechia",
+      "countryCode": "CZ",
+      "region": "Prague",
+      "city": "Prague",
+      "org": "Simac Technik CR a.s."
+    },
+    {
       "ts": "2026-08-24T08:21:11.997Z",
       "page": "/",
       "referrer": "",
