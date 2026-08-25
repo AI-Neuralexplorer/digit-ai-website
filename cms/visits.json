@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-25T17:26:45.764Z",
+      "page": "/",
+      "referrer": "https://yandex.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Poland",
+      "countryCode": "PL",
+      "region": "Silesia",
+      "city": "Katowice",
+      "org": "PLAY-Internet"
+    },
+    {
       "ts": "2026-08-25T09:30:59.428Z",
       "page": "/",
       "referrer": "https://www.google.com/",
