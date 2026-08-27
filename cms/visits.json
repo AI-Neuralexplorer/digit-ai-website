@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-08-27T21:20:38.249Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Croatia",
+      "countryCode": "HR",
+      "region": "City of Zagreb",
+      "city": "Zagreb",
+      "org": ""
+    },
+    {
       "ts": "2026-08-27T17:39:55.343Z",
       "page": "/",
       "referrer": "https://www.google.com/",
