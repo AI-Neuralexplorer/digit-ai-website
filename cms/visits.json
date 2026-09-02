@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-02T00:46:31.183Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Pennsylvania",
+      "city": "East Stroudsburg",
+      "org": "PenTeleData House Account"
+    },
+    {
       "ts": "2026-09-01T22:05:35.683Z",
       "page": "/",
       "referrer": "",
