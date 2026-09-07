@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-07T14:21:58.788Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "State of Berlin",
+      "city": "Berlin",
+      "org": "VPN Consumer Berlin, Germany"
+    },
+    {
       "ts": "2026-09-07T14:16:43.377Z",
       "page": "/",
       "referrer": "",
