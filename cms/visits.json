@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-09T13:51:45.372Z",
+      "page": "/",
+      "referrer": "https://www.bing.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "region": "Scotland",
+      "city": "Glasgow",
+      "org": "East Dunbartonshire Council"
+    },
+    {
       "ts": "2026-09-09T10:50:04.746Z",
       "page": "/",
       "referrer": "https://www.bing.com/",
