@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-10T04:11:49.014Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Poland",
+      "countryCode": "PL",
+      "region": "Mazovia",
+      "city": "Warsaw",
+      "org": "PLAY-Internet"
+    },
+    {
       "ts": "2026-09-09T13:51:45.372Z",
       "page": "/",
       "referrer": "https://www.bing.com/",
