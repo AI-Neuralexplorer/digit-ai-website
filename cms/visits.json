@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-11T04:32:17.863Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Italy",
+      "countryCode": "IT",
+      "region": "Veneto",
+      "city": "Padua",
+      "org": ""
+    },
+    {
       "ts": "2026-09-10T07:11:28.331Z",
       "page": "/",
       "referrer": "https://www.google.com/",
