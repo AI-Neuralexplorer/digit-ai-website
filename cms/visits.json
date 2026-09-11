@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-11T15:42:41.988Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "Zeeland",
+      "city": "Sint Philipsland",
+      "org": "KPN Mobile The Netherlands B.V."
+    },
+    {
       "ts": "2026-09-11T14:33:43.765Z",
       "page": "/",
       "referrer": "https://www.linkedin.com/",
