@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-21T11:25:04.720Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Egypt",
+      "countryCode": "EG",
+      "region": "Giza",
+      "city": "Giza",
+      "org": ""
+    },
+    {
       "ts": "2026-09-21T09:54:39.991Z",
       "page": "/",
       "referrer": "https://www.google.com/",
