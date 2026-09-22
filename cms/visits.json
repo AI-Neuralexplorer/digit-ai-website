@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-22T02:30:57.314Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Russia",
+      "countryCode": "RU",
+      "region": "St.-Petersburg",
+      "city": "St Petersburg",
+      "org": "SkyNet Networks"
+    },
+    {
       "ts": "2026-09-22T00:41:43.760Z",
       "page": "/",
       "referrer": "https://www.google.com/",
