@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-24T11:54:09.498Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "North Holland",
+      "city": "Haarlem",
+      "org": "iCloud Private Relay"
+    },
+    {
       "ts": "2026-09-24T09:07:51.726Z",
       "page": "/",
       "referrer": "https://www.google.com/",
