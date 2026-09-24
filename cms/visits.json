@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-24T04:57:52.301Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "Utrecht",
+      "city": "Nieuwegein",
+      "org": ""
+    },
+    {
       "ts": "2026-09-23T04:33:27.476Z",
       "page": "/",
       "referrer": "",
