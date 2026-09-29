@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-29T15:17:44.110Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "North Holland",
+      "city": "Heemstede",
+      "org": "Ziggo CM"
+    },
+    {
       "ts": "2026-09-29T14:35:06.277Z",
       "page": "/",
       "referrer": "",
