@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-09-29T14:35:06.277Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Bolivia",
+      "countryCode": "BO",
+      "region": "Cochabamba",
+      "city": "Cochabamba",
+      "org": "Telefonica Celular de Bolivia S.A"
+    },
+    {
       "ts": "2026-09-29T04:45:03.350Z",
       "page": "/",
       "referrer": "",
