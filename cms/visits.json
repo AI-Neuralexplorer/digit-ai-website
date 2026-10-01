@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-01T15:58:34.753Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Oregon",
+      "city": "Boardman",
+      "org": "AWS EC2 (us-west-2)"
+    },
+    {
       "ts": "2026-10-01T12:24:46.090Z",
       "page": "/",
       "referrer": "https://www.google.com/",
