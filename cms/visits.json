@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-03T21:41:52.007Z",
+      "page": "/",
+      "referrer": "https://www.bing.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Colombia",
+      "countryCode": "CO",
+      "region": "Bogota D.C.",
+      "city": "Bogotá",
+      "org": ""
+    },
+    {
       "ts": "2026-10-02T06:30:06.010Z",
       "page": "/",
       "referrer": "",
