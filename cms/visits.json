@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-06T14:34:17.480Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Virginia",
+      "city": "Ashburn",
+      "org": "AWS EC2 (us-east-1)"
+    },
+    {
       "ts": "2026-10-06T13:17:17.161Z",
       "page": "/",
       "referrer": "https://www.google.com/",
