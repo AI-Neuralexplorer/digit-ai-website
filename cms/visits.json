@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-06T23:53:33.170Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Washington",
+      "city": "Tukwila",
+      "org": "Solid Seattle"
+    },
+    {
       "ts": "2026-10-06T21:41:20.669Z",
       "page": "/",
       "referrer": "",
