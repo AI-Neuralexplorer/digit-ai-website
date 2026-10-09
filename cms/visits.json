@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-09T07:52:01.494Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "North Holland",
+      "city": "Amsterdam",
+      "org": "Veducon GTT"
+    },
+    {
       "ts": "2026-10-09T01:08:25.063Z",
       "page": "/",
       "referrer": "",
