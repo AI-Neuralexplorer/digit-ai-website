@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-23T10:34:57.597Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Tanzania",
+      "countryCode": "TZ",
+      "region": "Dar es Salaam Region",
+      "city": "Dar es Salaam",
+      "org": "Vodacom Tanzania Ltd"
+    },
+    {
       "ts": "2026-10-23T05:19:12.682Z",
       "page": "/",
       "referrer": "",
