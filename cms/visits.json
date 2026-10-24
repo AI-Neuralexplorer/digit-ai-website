@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-24T02:16:45.099Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "Yogyakarta",
+      "city": "Yogyakarta",
+      "org": "Byteplus Pte. Ltd"
+    },
+    {
       "ts": "2026-10-23T13:29:44.397Z",
       "page": "/",
       "referrer": "",
