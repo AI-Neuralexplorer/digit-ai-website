@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-25T12:48:17.242Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Saudi Arabia",
+      "countryCode": "SA",
+      "region": "Al-Qassim Region",
+      "city": "Buraidah",
+      "org": "Etihad Etisalat, a joint stock company"
+    },
+    {
       "ts": "2026-10-25T06:44:58.263Z",
       "page": "/",
       "referrer": "https://www.google.com/",
