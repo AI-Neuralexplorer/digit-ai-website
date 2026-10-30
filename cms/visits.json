@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-30T10:20:50.711Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Bavaria",
+      "city": "Günzburg",
+      "org": "1&1 Versatel Deutschland GmbH"
+    },
+    {
       "ts": "2026-10-30T09:46:24.451Z",
       "page": "/",
       "referrer": "",
