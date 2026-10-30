@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-10-30T22:00:14.916Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "region": "São Paulo",
+      "city": "Santos",
+      "org": "TELEF�NICA BRASIL S.A"
+    },
+    {
       "ts": "2026-10-30T15:56:50.252Z",
       "page": "/",
       "referrer": "",
