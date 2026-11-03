@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-03T10:49:48.266Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Oman",
+      "countryCode": "OM",
+      "region": "Muscat",
+      "city": "Muscat",
+      "org": "Nawras (Oman)"
+    },
+    {
       "ts": "2026-11-03T07:02:05.940Z",
       "page": "/",
       "referrer": "https://www.google.com/",
