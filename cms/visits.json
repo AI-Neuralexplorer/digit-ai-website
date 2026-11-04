@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-04T17:30:24.539Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "South Africa",
+      "countryCode": "ZA",
+      "region": "Gauteng",
+      "city": "Pretoria",
+      "org": ""
+    },
+    {
       "ts": "2026-11-04T15:39:10.653Z",
       "page": "/",
       "referrer": "",
