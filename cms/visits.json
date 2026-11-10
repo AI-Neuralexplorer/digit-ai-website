@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-10T07:59:55.162Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Latvia",
+      "countryCode": "LV",
+      "region": "Riga",
+      "city": "Riga",
+      "org": ""
+    },
+    {
       "ts": "2026-11-10T07:54:07.969Z",
       "page": "/",
       "referrer": "https://www.google.com/",
