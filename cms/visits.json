@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-13T19:39:22.393Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "region": "Central Papua",
+      "city": "Timika",
+      "org": ""
+    },
+    {
       "ts": "2026-11-13T15:07:42.650Z",
       "page": "/",
       "referrer": "",
