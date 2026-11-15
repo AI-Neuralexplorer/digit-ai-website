@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-15T01:21:35.266Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "region": "Goiás",
+      "city": "Goiânia",
+      "org": "NET Serviços de Comunicação S.A."
+    },
+    {
       "ts": "2026-11-15T01:14:47.510Z",
       "page": "/",
       "referrer": "",
