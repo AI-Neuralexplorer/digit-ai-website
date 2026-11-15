@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-15T18:30:07.840Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Venezuela",
+      "countryCode": "VE",
+      "region": "Distrito Federal",
+      "city": "Caracas",
+      "org": "Net Uno, C.A"
+    },
+    {
       "ts": "2026-11-15T17:47:49.908Z",
       "page": "/",
       "referrer": "https://www.google.com/",
