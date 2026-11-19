@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-19T01:04:10.306Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Jamaica",
+      "countryCode": "JM",
+      "region": "Kingston",
+      "city": "Kingston",
+      "org": ""
+    },
+    {
       "ts": "2026-11-19T00:16:58.987Z",
       "page": "/",
       "referrer": "",
