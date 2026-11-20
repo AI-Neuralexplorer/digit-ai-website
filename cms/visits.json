@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-20T18:23:59.502Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Kenya",
+      "countryCode": "KE",
+      "region": "Nairobi County",
+      "city": "Nairobi",
+      "org": "Safaricom Limited"
+    },
+    {
       "ts": "2026-11-20T14:01:19.248Z",
       "page": "/",
       "referrer": "https://www.google.com/",
