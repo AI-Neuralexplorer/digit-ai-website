@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-20T01:38:30.468Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Ecuador",
+      "countryCode": "EC",
+      "region": "Pichincha",
+      "city": "Quito",
+      "org": "PuntoNet S.A"
+    },
+    {
       "ts": "2026-11-19T16:34:35.598Z",
       "page": "/",
       "referrer": "https://www.google.com/",
