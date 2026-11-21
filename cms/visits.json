@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-21T19:43:39.625Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Germany",
+      "countryCode": "DE",
+      "region": "Hesse",
+      "city": "Frankfurt am Main",
+      "org": "Fine Group Servers Solutions LLC"
+    },
+    {
       "ts": "2026-11-21T18:37:17.401Z",
       "page": "/",
       "referrer": "https://www.google.com/",
