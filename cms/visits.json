@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-24T15:08:15.760Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "region": "Espírito Santo",
+      "city": "Cachoeiro de Itapemirim",
+      "org": ""
+    },
+    {
       "ts": "2026-11-24T14:34:11.435Z",
       "page": "/",
       "referrer": "",
