@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-24T11:49:28.875Z",
+      "page": "/",
+      "referrer": "",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "The Netherlands",
+      "countryCode": "NL",
+      "region": "Friesland",
+      "city": "Bolsward",
+      "org": ""
+    },
+    {
       "ts": "2026-11-24T05:08:33.535Z",
       "page": "/",
       "referrer": "",
