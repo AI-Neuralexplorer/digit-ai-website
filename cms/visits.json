@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-25T20:15:21.376Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "Canada",
+      "countryCode": "CA",
+      "region": "British Columbia",
+      "city": "Vancouver",
+      "org": "TELUS Communications Inc"
+    },
+    {
       "ts": "2026-11-25T13:08:27.280Z",
       "page": "/",
       "referrer": "https://www.bing.com/",
