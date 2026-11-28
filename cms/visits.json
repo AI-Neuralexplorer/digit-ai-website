@@ -1,6 +1,19 @@
 {
   "visits": [
     {
+      "ts": "2026-11-28T11:05:20.847Z",
+      "page": "/",
+      "referrer": "https://www.google.com/",
+      "utm_source": "",
+      "utm_medium": "",
+      "utm_campaign": "",
+      "country": "South Africa",
+      "countryCode": "ZA",
+      "region": "Gauteng",
+      "city": "Johannesburg",
+      "org": "Dimension Data"
+    },
+    {
       "ts": "2026-11-28T10:35:23.804Z",
       "page": "/",
       "referrer": "",
